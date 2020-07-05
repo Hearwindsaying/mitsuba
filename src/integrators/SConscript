@@ -40,4 +40,7 @@ plugins += bidirEnv.SharedLibrary('erpt',
         ['erpt/erpt.cpp', 'erpt/erpt_proc.cpp']
 )
 
+# Spherical Harmonics Integration
+plugins += env.SharedLibrary('shintegrate', ['shintegrate/shintegrate.cpp'])
+
 Export('plugins')
